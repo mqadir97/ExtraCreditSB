@@ -1,0 +1,181 @@
+
+
+<!doctype html>
+<html>
+<head>
+  <title>Messages</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <link rel="stylesheet" href="css/navbar.css"> -->
+    <!-- <link rel="stylesheet" href="css/top-navbar.css"> -->
+
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lora" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="js/chat.js"></script>
+
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/bootstrap-theme.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/chat.css">
+
+<body>
+  <!--NAVIGATION BAR-->
+  <nav class="navbar">
+          <span class="navbar-toggle" id="js-navbar-toggle">
+              <i class="fas fa-bars"></i>
+          </span>
+          <!-- <a href="#" class="logo">logo</a> -->
+          <a href="/index"><input type="button" value="<" onclick="goBack()"></a>
+          <ul class="main-nav" id="js-menu">
+
+              <li>
+                  <a href="/index" class="nav-links">Home</a>
+              </li>
+              <li>
+                  <a href="/searchbar" class="nav-links">Classes</a>
+              </li>
+              <li>
+                  <a href="/studybuddy" class="nav-links">StudyBuddy</a>
+              </li>
+              <li>
+                  <a href="/profile" class="nav-links">Profile</a>
+              </li>
+              <li>
+                  <a href="/chat" class="nav-links">Messages</a>
+              </li>
+              <li>
+                  <a href="/" class="nav-links">Sign-Out</a>
+              </li>
+
+          </ul>
+      </nav>
+  <script type="text/javascript">
+    let mainNav = document.getElementById('js-menu');
+  let navBarToggle = document.getElementById('js-navbar-toggle');
+
+  navBarToggle.addEventListener('click', function () {
+    mainNav.classList.toggle('active');
+  });
+
+  </script>
+  <!--NAVIGATION BAR-->
+
+  <script>
+      function goBack() {
+      window.history.back()
+      }
+   </script>
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+    <div class = "messages">
+      <center><h3>Messages</h3></center>
+    </div>
+
+<div id="chatbox">
+    <div id="friends">
+        <div class="friend">
+            <img src="/images/guy.jpg" />
+            <p>
+             <strong>Muhammad Talha</strong>
+
+            </p>
+            <div class="status available"></div>
+        </div>
+
+        <div class="friend">
+            <img src="/images/guy1.jpg"  />
+            <p>
+            <strong>Mohammad Khawar</strong>
+
+            </p>
+            <div class="status available"></div>
+         </div>
+
+        <div class="friend">
+            <img src="/images/guy2.jpg"  />
+            <p>
+            <strong>Gus</strong>
+
+            </p>
+            <div class="status inactive"></div>
+        </div>
+
+        <div class="friend">
+            <img src="/images/girl.jpg"  />
+            <p>
+            <strong>Saveereh Hai</strong>
+
+            </p>
+            <div class="status available"></div>
+        </div>
+
+        <div class="friend">
+            <img src="/images/girl1.jpg"  />
+            <p>
+            <strong>Timmothy</strong>
+
+            </p>
+            <div class="status inactive"></div>
+        </div>
+
+
+    </div>
+
+    <div id="chatview" class="p1">
+        <div id="profile">
+
+            <div id="close">
+                <div class="cy"></div>
+                <div class="cx"></div>
+            </div>
+
+            <p>Miro Badev</p>
+            <span>miro@badev@gmail.com</span>
+        </div>
+        <div id="chat-messages">
+            <label>Wednesday 13</label>
+
+
+            <div class="message right" id="rightmessage">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqPgOH0njEY3NvX_8SkzJdA73JPgl-H97HXJJCR1yIOqpjX_zdfg"/>
+                <div class="bubble">
+                    Hi. do you have notes from yesterday?.
+                    <div class="corner"></div>
+                    <span>10 min</span>
+                </div>
+            </div><br>
+
+            <div class="message">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/1_copy.jpg" />
+                <div class="bubble">
+                    well, yes i do, i'll send them to you in a bit?
+                    <div class="corner"></div>
+                    <span>7 minutes</span>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div id="sendmessage">
+            <input type="text" id="myMessage" value="Send message..." />
+            <button id="send"></button>
+        </div>
+
+
+    </div>
+
+
+</div>
+    <!-- Navigation Bar -->
+   <!--  -->
+</div>
+
+</body>
+</html>

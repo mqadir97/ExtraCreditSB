@@ -3,33 +3,19 @@
 <head>
   <title>StudyBuddy</title>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.min.css">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link href="css/bootstrap.css" rel="stylesheet">
   <link href="css/bootstrap-theme.css" rel="stylesheet">
   <link rel="stylesheet" href="/css/studybuddy.css">
 
-  <!-- <script>
-    function goBack() {
-    window.history.back()
-    }
-  </script> -->
-<!-- Google Analytics -->
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-135670531-1', 'auto');
-ga('send', 'pageview');
-</script>
-<!-- End Google Analytics -->
-</head>
-
-<body>
-<!--   <a href="/index"><input type="button" value="back" onclick="goBack()"></a> -->
+  <script>
+      function goBack() {
+      window.history.back()
+      }
+   </script>
 
 <!--NAVIGATION BAR-->
 <nav class="navbar">
@@ -37,6 +23,7 @@ ga('send', 'pageview');
             <i class="fas fa-bars"></i>
         </span>
         <!-- <a href="#" class="logo">logo</a> -->
+        <a href="/index"><input type="button" value="<" onclick="goBack()"></a>
         <ul class="main-nav" id="js-menu">
             <li>
                 <a href="/index" class="nav-links">Home</a>
@@ -51,9 +38,12 @@ ga('send', 'pageview');
                 <a href="/profile" class="nav-links">Profile</a>
             </li>
             <li>
+                <a href="/chat" class="nav-links">Messages</a>
+            </li>
+            <li>
                 <a href="/" class="nav-links">Sign-Out</a>
             </li>
-          
+
         </ul>
     </nav>
 <script type="text/javascript">
@@ -68,33 +58,42 @@ navBarToggle.addEventListener('click', function () {
 <!--NAVIGATION BAR-->
 <br><br>
 
+<div class="title">
+  <center><h2>Add Your StudyBuddy</h2> </center>
+</div><br>
+  <form id="addBuddyForm" role="form" method="get" action="/addSB">
 
-  <center><h3>Add Your StudyBuddy</h3> </center>
-
-  <form id="addBuddyForm" role="form" method="get" action="/addSB">      
-      
         <div class="form-group">
-          <label for="name">Name:</label>
-          <input type="text" class="form-control" id="name" placeholder="Name" name="name" href="index.handlebars">
-          
+          <!-- <label for="name">Name:</label> -->
+          <input type="text" class="form-control" id="name" placeholder="Name of the student..." name="name" href="index.handlebars">
+
         </div>
         <!--<div class="form-group">
           <label for="description">Description:</label>
           <input type="text" class="form-control" id="description" placeholder="Description" name="description">
         </div>-->
-       <center> <input type="submit" id="submitBtn" class="btn btn-default" value="Add the buddy"></input></center>
+       <center> <input type="submit" id="submitBtn" class="btn btn-default" value="Add the buddy"></input></center> <br> <br>
+
+      <center><h2> <label for="name">Your StuddyBuddy List:</label> </h2></center>
+      <div class="friends">
 
   {{#each studybuddy}}
     <div class="studybuddy">
-      <a href="./profile">
-        <p>{{name}}</p></a>
+      <a href="./profile/{{@index}}">
+        <center><strong><p>{{name}}</p></strong>
+       <!--    <p> Description: {{description}}</p> -->
+        </center>
+
     </div>
-  {{/each}} 
- <!--  {{#each studybuddy}} 
+    <hr>
+  {{/each}}
+
+  </div>
+ <!--  {{#each studybuddy}}
     <a href="/profile"><input type="link"/></a>
   {{/each}} -->
 
-  
+
   </form>
   <script src="js/jquery-1.11.0.js"></script>
   <script src="js/bootstrap.js"></script>

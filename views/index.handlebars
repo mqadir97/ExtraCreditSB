@@ -3,23 +3,64 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>StudyBuddy - Homepage</title>
-<link href="/css/iStyle.css" rel="stylesheet" type="text/css" />
-<link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/bootstrap-theme.css" rel="stylesheet">
+  <link href="/css/iStyle.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
 	<!--NAVIGATION BAR-->
+<!-- <nav class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+
+        <ul class="main-nav" id="js-menu">
+
+            <li>
+                <a href="/" class="nav-links">Sign-Out</a>
+            </li>
+
+        </ul>
+    </nav>
+<script type="text/javascript">
+  let mainNav = document.getElementById('js-menu');
+let navBarToggle = document.getElementById('js-navbar-toggle');
+
+navBarToggle.addEventListener('click', function () {
+  mainNav.classList.toggle('active');
+});
+
+</script> -->
 <nav class="navbar">
         <span class="navbar-toggle" id="js-navbar-toggle">
             <i class="fas fa-bars"></i>
         </span>
         <!-- <a href="#" class="logo">logo</a> -->
         <ul class="main-nav" id="js-menu">
-            
+            <li>
+                <a href="/index" class="nav-links">Home</a>
+            </li>
+            <li>
+                <a href="/searchbar" class="nav-links">Classes</a>
+            </li>
+            <li>
+                <a href="/studybuddy" class="nav-links">StudyBuddy</a>
+            </li>
+            <li>
+                <a href="/profile" class="nav-links">Profile</a>
+            </li>
+            <li>
+                <a href="/chat" class="nav-links">Messages</a>
+            </li>
             <li>
                 <a href="/" class="nav-links">Sign-Out</a>
             </li>
-          
+
         </ul>
     </nav>
 <script type="text/javascript">
@@ -33,13 +74,14 @@ navBarToggle.addEventListener('click', function () {
 </script>
 <!--NAVIGATION BAR-->
 	<div class="signin">
-	
+
 	<form>
 		<!-- <a href="/"><input type="button" id="signout" value="Sign-out" onclick="goBack()"></a><br /><br />  -->
-		<h2 style="color:#fff;">StudyBuddy</h2>
-		<!--	/studybuddies --> <a href="/studybuddy"><input type="button" value="Study Buddies" /></a><br /><br /> 
+		<h2 style="color:#fff;">StudyBuddy</h2><br>
+		<!--	/studybuddies --> <a href="/studybuddy"><input type="button" value="Study Buddies" /></a><br /><br />
 			<a href="/searchbar"><input type="button" value="Classes" /></a><br /><br />
 			<a href="/profile"><input type="button" value="Profile" /></a><br /><br />
+			<a href="/chat"><input type="button" value="Messages" /></a>
 			<!--<a href="cong.html"><input type="button" value="Calendar" /></a><br /><br />-->
 	</form>
 	</div>

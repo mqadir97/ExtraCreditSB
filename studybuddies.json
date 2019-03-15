@@ -1,13 +1,32 @@
 {
 	"studybuddy": [
 		{
-			"name": "Muhammad Talha"
+			"name": "Muhammad Talha",
+			"description": "Cogs 120"
 		},
 		{
-			"name": "Khawar Khan"
+			"name": "Khawar Khan",
+			"description": "CSE120"
 		},
 		{
-			"name": "Tiffany Zhang"			
+			"name": "Tiffany Zhang",
+			"description": "MGT 120"			
+		},
+		{
+			"name": "Raj Kumar",
+			"description": "Cogs 120"		
+		},
+		{
+			"name": "Taylor Wood",
+			"description": "ECE 120"			
+		},
+		{
+			"name": "chris Tucker",
+			"description": "CSE 120"			
+		},
+		{
+			"name": "Gus Chris",
+			"description": "Cogs 120"			
 		}
 	]
 }

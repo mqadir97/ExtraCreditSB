@@ -14,6 +14,9 @@ var index = require('./routes/index');  //import
 var logn = require('./routes/logn');
 
 var profile = require('./routes/profile');
+var profile1 = require('./routes/profile1');
+var profile2 = require('./routes/profile2');
+var profile3 = require('./routes/profile3');
 
 var searchbar = require('./routes/searchbar');
 
@@ -30,7 +33,7 @@ var frnds = require('./routes/frnds');
 var alternative = require('./routes/alternative');
 
 // var pictureLink = require('./routes/profile');
-
+var chat = require('./routes/chat');
 
 // all environments
 app.set('port', process.env.PORT || 3000);
@@ -63,12 +66,18 @@ app.get('/index', index.view);
 // });
 
 app.get('/profile', profile.viewProfile);
+app.get('/profile1', profile1.viewProfile);
+app.get('/profile2', profile2.viewProfile);
+app.get('/profile3', profile3.viewProfile);
+
+app.get('/profile/:id', profile.showProfile);
 
 app.get('/searchbar', searchbar.viewSearchbar);
 
 app.get('/studybuddy', studybuddy.viewStudybuddy);
 
-app.get('/addSB', addSB.addBuddy);
+app.get('/addSB', profile.addBuddy);
+
 
 app.get('/add', add.addClass);
 
@@ -76,6 +85,7 @@ app.get('/add', add.addClass);
 
  app.get('/alternative', alternative.viewAlternative);
 
+app.get('/chat', chat.view);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

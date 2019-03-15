@@ -9,12 +9,12 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"> -->
-<script src="/js/jquery-1.11.0.js" type="text/javascript"></script>
+<script src="./js/jquery-1.11.0.js" type="text/javascript"></script>
 
  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
-  <link href="/css/bootstrap.css" rel="stylesheet">
-  <link href="/css/bootstrap-theme.css" rel="stylesheet">
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/bootstrap-theme.css" rel="stylesheet">
   <link href="/css/profile.css" rel="stylesheet" type="text/css" />
 
 
@@ -24,22 +24,14 @@
 
   <body>
 
-    <script>
-        function goBack() {
-        window.history.back()
-        }
-     </script>
-
-
+<!-- <a href="/index"><input type="button" value="back" onclick="goBack()"></a> -->
 
 <!--NAVIGATION BAR-->
 <nav class="navbar">
-  <a href="/index"><input type="button" value="<" onclick="goBack()"></a>
         <span class="navbar-toggle" id="js-navbar-toggle">
             <i class="fas fa-bars"></i>
         </span>
         <!-- <a href="#" class="logo">logo</a> -->
-
         <ul class="main-nav" id="js-menu">
             <li>
                 <a href="/index" class="nav-links">Home</a>
@@ -87,14 +79,14 @@ navBarToggle.addEventListener('click', function () {
  -->
  <div class="card middle">
       <div class="top-section">
-        <img src="/images/p.png" alt="">
+        <img src="./images/p.png" alt="">
         <div class="menuicon">
           <span class="s1"></span>
           <span class="s2"></span>
         </div>
         <div class="name">
-              {{name}} <br>
-          <span>{{last}}</span>
+          Raj <br>
+          <span>Kumar</span>
         </div>
       </div>
       <br>
@@ -105,8 +97,8 @@ navBarToggle.addEventListener('click', function () {
         </h2><br>
           <p>
 
-            <!-- CogSci major w/ specialization in Design & Intearctions. -->
-          {{about}}
+            Hey, i'm a business major. I Also like to Travel.
+
         </p>
         <h2>contact
           <div class="border"></div>
@@ -122,5 +114,8 @@ navBarToggle.addEventListener('click', function () {
     </div>
 
 
+
+
+    <!-- <script src="/js/profile.js" type="text/javascript"></script> -->
   </body>
 </html>

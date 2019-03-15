@@ -1,0 +1,39 @@
+{
+	"profile": [
+		{
+			"name": "Muhammad ",
+			"last": "Talha",
+			"about": "CSE major and minoring in business"
+		},
+		{
+			"name": "khawar ",
+			"last": "khan",
+			"about": "Cognitive Science Major at UCSD"
+		},
+		{
+			"name": "Tiffany",
+			"last": "Zhang",
+			"about": "MIA"
+		},
+		{
+			"name": "Timmothy ",
+			"last": "Fer",
+			"about": "Business minor at UCSD, I wanna learn more about CS"
+		},
+		{
+			"name": "Ian ",
+			"last": "Zackery",
+			"about": "CE major and minoring in business"
+		},
+		{
+			"name": "Jaipal ",
+			"last": "gandho",
+			"about": "Ionknow man"
+		},
+		{
+			"name": "Gushty ",
+			"last": "Khawar",
+			"about": "Math major mera sapna hai"
+		}
+	]
+}

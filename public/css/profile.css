@@ -1,19 +1,72 @@
-body{
-  margin: 0;
-  padding: 0;
-  background: #76322c;
+
+body {
+ margin: 0;
+ padding: 0;
+ background: #D36868;
+
 }
+
+input
+{
+    width: 240px;
+    text-align: left;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    font-family: 'Play', sans-serif;
+    font-size: 16px;
+    font-weight: 200px;
+    padding: 10px 0;
+    transition: border 0.5s;
+    outline: none;
+    color: #fff;
+}
+ input[type=button]
+{
+    border: none;
+    width: 190px;
+    background: white;
+    color: #000;
+    font-size: 16px;
+    /* line-height: 25px; */
+    padding: 10px 0;
+    border-radius: 15px;
+    cursor: pointer;
+}
+input[type=button]:hover
+{
+    color: #fff;
+    background-color: black;
+}
+
+input[type=button]
+{
+    background-color: transparent;
+    width: 50px;
+    color: white;
+    font-size: 22px;
+    /* line-height: 25px; */
+    padding-left: 10px;
+    border-radius: 0px;
+    cursor: pointer;
+}
+input[type=button]:hover
+{
+    color: #fff;
+    background-color: black;
+}
+
 .card{
   width: 340px;
   background: #f1f1f1;
   overflow: hidden;
   font-family: "montserrat",sans-serif;
   box-shadow: 0 0 20px #00000070;
+  margin-top: 13%;
 }
 .middle{
-  position: absolute;
-  padding-top: 50px;
-  top: 65%;
+  position: relative;
+  top: 190px;
   left: 50%;
   transform: translate(-50%,-50%);
 }
@@ -23,14 +76,14 @@ body{
 .top-section img{
   width: 100%;
 }
-/*.menuicon{
+.menuicon{
   position: absolute;
   width: 22px;
-  left: 202px;
+  left: 20px;
   top: 20px;
   cursor: pointer;
-}*/
-/*.menuicon span{
+}
+.menuicon span{
   width: 100%;
   height: 3px;
   background: #000;
@@ -39,8 +92,8 @@ body{
   margin-bottom: 6px;
   opacity: .5;
   transition: .4s;
-}*/
-/*.menuicon .s1{
+}
+.menuicon .s1{
   left: -5px;
 }
 .menuicon .s2{
@@ -48,12 +101,12 @@ body{
 }
 .menuicon:hover span{
   left: 0;
-}*/
+}
 .name{
   position: absolute;
   bottom: 20px;
-  left: 20px;
-  font-size: 40px;
+  left: 15px;
+  font-size: 30px;
   font-weight: 900;
   opacity: .5;
 }
@@ -99,6 +152,7 @@ p{
   color: #778beb;
 }
 
+
 * {
             box-sizing: border-box;
             padding: 0;
@@ -132,7 +186,12 @@ p{
             margin: 15px auto;
         }
 
-      
+        .logo {
+            display: inline-block;
+            font-size: 22px;
+            margin-top: 10px;
+            margin-left: 20px;
+        }
 
         .navbar-toggle {
             position: absolute;
@@ -183,4 +242,3 @@ p{
             .nav-links:hover {
                 color: rgba(255, 255, 255, 1);
             }
-        }
